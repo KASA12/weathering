@@ -1,7 +1,7 @@
 let pg = null;
 let pg_origin = null;
 let ps = [];
-const PERTICLE_NUM = 500;
+const PERTICLE_NUM = 200;
 const HUE = 30;
 const SAT = 70;
 const VAL = 80;
@@ -95,7 +95,7 @@ class Particle {
       this.x += 1;
       if (width <= this.x) {
         this.x = 0;
-        this.y++;
+        this.y += 5;
         this.color = color(HUE, SAT, VAL, 30);
       }
       if (height <= this.y) {
